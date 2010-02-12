@@ -1,9 +1,12 @@
 
 h2. Quick Start
 
-The quick start assumes basic familiarity with vitualenv, virtualenv wrapper.
+The quick start assumes basic familiarity with "vitualenv":http://virtualenv.openplans.org/, "virtualenv wrapper":http://www.doughellmann.com/projects/virtualenvwrapper/.
+
+It also assumes you have both subversion, mecurial, and git clients locally.
 
 * mkvirtualenv myblog --no-site-packages
+* workon myblog
 * cd myblog
 * git clone git://github.com/montylounge/django-mingus.git
 * cd django-mingus/mingus
@@ -11,7 +14,7 @@ The quick start assumes basic familiarity with vitualenv, virtualenv wrapper.
 * ... wait a bit
 * mv local_settings.py.template local_settings.py
 * ./manage.py syncdb
-* .manage.py loaddata fixtures/test_data.json
+* .manage.py loaddata test_data.json
 * ./manage.py runserver
 
 By default the theme is set to the Basic theme.

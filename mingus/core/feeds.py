@@ -12,8 +12,8 @@ class AllEntries(Feed):
     copyright = _settings.copyright
  
     def link(self):
-        return 'http://%s' % self._settings.site.domain
- 
+        return 'http://%s' % self.settings.site.domain
+
     def items(self):
         return Proxy.objects.published().order_by('-pub_date')[:20]
  
@@ -28,6 +28,7 @@ class AllEntries(Feed):
         
     def item_author_name(self, obj):
         return 'Samuel Clay'
+
 
 class ByTag(AllEntries):
     
