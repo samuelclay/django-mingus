@@ -12,7 +12,7 @@
 
 {"pk": 1, "model": "bookmarks.bookmark", "fields": {"extended": "", "description": "A must subscribe resource for all things Django.", "created": "2009-09-03 21:58:28", "url": "http://www.djangoproject.com/community/", "title": "Django Community", "modified": "2009-09-03 21:58:28", "slug": "django-community", "tags": "django, community"}},
 
-{"pk": 1, "model": "blog.settings", "fields": {"meta_description": "A blog engine powered by Mingus, a Django project.", "rss_url": "http://127.0.0.1:8000/feeds/latest/", "about": "This is a little bit about myself for the right hand rail.", "meta_keywords": "Blog, blog engine, Django, django-mingus.", "site_name": "example.com", "copyright": "Acme LLC.", "twitter_url": "http://twitter.com/YOURUSERNAME", "ping_google": true, "site": 1, "author_name": "Jane Shmoe", "page_size": 20, "disqus_shortname": "", "email_subscribe_url": ""}},
+{"pk": 1, "model": "blog.settings", "fields": {"meta_description": "A blog engine powered by Mingus, a Django project.", "rss_url": "http://127.0.0.1:8000/feeds/latest/", "about": "This is a little bit about myself for the right hand rail.", "meta_keywords": "Blog, blog engine, Django, django-mingus.", "site_name": "example.com", "copyright": "Acme LLC.", "twitter_url": "http://twitter.com/YOURUSERNAME", "ping_google": true, "site": 1, "author_name": "Jane Shmoe", "page_size": 20, "disqus_shortname": "", "email_subscribe_url": "", "tinymce_isactive": 1}},
 
 {"pk": 1, "model": "blog.blogroll", "fields": {"url": "http://blog.montylounge.com/", "sort_order": 0, "name": "Montylounge"}},
 

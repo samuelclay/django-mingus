@@ -6,3 +6,7 @@ pip-log.txt
 django_mingus.egg-info
 mingus/media/CACHE/
 .svn/*
+.svn
+.svn*
+svn
+*svn*

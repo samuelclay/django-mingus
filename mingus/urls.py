@@ -49,7 +49,9 @@ urlpatterns += patterns('',
     (r'^api/springsteen/posts/$', springsteen_results),
     (r'^api/springsteen/firehose/$', springsteen_firehose),
     (r'^api/springsteen/category/(?P<slug>[-\w]+)/$', springsteen_category),
-
+    
+    (r'comments/', include('django.contrib.comments.urls')),
+    
     url(r'^contact/$',
         contact_form,
         name='contact_form'),

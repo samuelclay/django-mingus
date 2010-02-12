@@ -34,7 +34,7 @@
     {% endif %}
     <div class="body">
       {% oembed %}
-      {{ object.body_markup|render_inlines|safe }}
+      {{ object.body_markup|pygmentize|safe }}
       {% endoembed %}
     </div>
   </div>
@@ -66,6 +66,7 @@
   {% endif %}
   {% endcache %}
 
+  {% comment %}
   <div class="subscribe clearfix">
     <ul>
       <li><a href="http://twitter.com/?status=reading: {{ object.title }} - {{ SITE_URL }}{{ object.get_absolute_url }}" target="_blank">{% trans "Twitter this" %}</a></li>
@@ -75,6 +76,7 @@
     </ul>
   </div>
   <!-- post -->
+  {% endcomment %}
 
 {% if object.allow_comments %}
 	{% include "blog/includes/comments.html" %}
