@@ -12,7 +12,7 @@ class AllEntries(Feed):
     copyright = _settings.copyright
  
     def link(self):
-        return 'http://%s' % self.settings.site.domain
+        return 'http://%s' % self._settings.site.domain
 
     def items(self):
         return Proxy.objects.published().order_by('-pub_date')[:20]
@@ -21,7 +21,8 @@ class AllEntries(Feed):
         return item.content_object.get_absolute_url()
  
     def item_categories(self, item):
-        return item.tags.replace(',', '').split()
+        if item.tags:
+            return item.tags.replace(',', '').split()
         
     def item_pubdate(self, obj):
         return obj.pub_date

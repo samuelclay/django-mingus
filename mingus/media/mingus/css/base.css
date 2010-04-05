@@ -140,16 +140,7 @@ label
 }
 
 /* CODE */
-pre, pre.prettify
-{
-  overflow: auto;
-  z-index: 0;
-  background-color: #fff;
-  padding: .6em 0em .6em .6em;
-  display: block;
-  width: 99%;
-  border: 1px solid red;
-}
+
 
 
 /* HEADER/NAV */
