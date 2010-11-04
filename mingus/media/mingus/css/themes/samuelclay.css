@@ -37,6 +37,7 @@ ol li {
 #header .logo-subtitle {
     color: #808080;
     font-size: 14px;
+    padding: 0 10px;
 }
 
 
@@ -177,6 +178,10 @@ h2 a:hover {
 /* ============ */
 /* = Pygments = */
 /* ============ */
+
+pre {
+    padding: 2px 0 2px 10px;
+}
 
 code, .highlight {
     font-size: 13px;

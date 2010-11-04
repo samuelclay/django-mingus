@@ -4,7 +4,7 @@ import os
 PROJECT_ROOT = os.path.dirname(__file__)
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
-ADMIN_MEDIA_PREFIX = '/admin_media/'
+ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 #staticfiles app values
 STATIC_URL = '/media/mingus/'
@@ -31,7 +31,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.doc.XViewMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'slimmer.middleware.CompressHtmlMiddleware',
+    # 'slimmer.middleware.CompressHtmlMiddleware',
     'sugar.middleware.debugging.UserBasedExceptionMiddleware',
     'request.middleware.RequestMiddleware',
     'djangodblog.DBLogMiddleware',
