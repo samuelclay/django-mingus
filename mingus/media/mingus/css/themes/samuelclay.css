@@ -12,6 +12,11 @@ h3 {
     font-size: 1.25em;
 }
 
+h2 {
+    margin: 1.5em 0 .5em;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 6px;
+}
 ul, ol {
     margin: 1em 0;
 }
@@ -79,8 +84,13 @@ ol li {
     width: 3.8em;
     margin: 0 0 0 -96px;
     background-color: #202060;
+    text-align: center;
 }
 
+.date .date-year {
+    font-size: 12px;
+    text-align: center;
+}
 .post .teaser {
     border-bottom: solid 1.0em #000;
 }

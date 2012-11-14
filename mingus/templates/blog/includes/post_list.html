@@ -1,6 +1,9 @@
 {% load blog tagging_tags inlines %}
 <div class="post clearfix">
-	<div class="date">{{ post.publish|date:"M d" }}</div>
+    <div class="date">
+        {{ post.publish|date:"M d" }}
+        <div class="date-year">{{ post.publish|date:"Y" }}</div>
+    </div>
 	<h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
 	<p class="list-tease">{{ post.tease|safe }}</p>
 </div>

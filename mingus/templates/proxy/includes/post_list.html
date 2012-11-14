@@ -1,5 +1,8 @@
 <div class="post clearfix">
-  <div class="date">{{ object.pub_date|date:"M d" }}</div>
+  <div class="date">
+      {{ object.pub_date|date:"M d" }}
+      <div class="date-year">{{ object.pub_date|date:"Y" }}</div>
+  </div>
   <h3><a href="{{ object.content_object.get_absolute_url }}">{{ object.title }}</a></h3>
   <p class="list-tease">{{ object.content_object.tease|safe }}</p>
 </div>
