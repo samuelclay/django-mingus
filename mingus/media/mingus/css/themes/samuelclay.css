@@ -190,13 +190,13 @@ h2 a:hover {
 /* ============ */
 
 pre {
-    padding: 2px 0 2px 10px;
+    padding: 2px 10px;
 }
 
 code, .highlight {
     font-size: 13px;
     line-height: 1.1em;
-    margin: 0 0 32px;
+    margin: 0 0 12px;
     background-color: #fffff6;
     overflow-x: auto;
 }
