@@ -37,12 +37,16 @@ ol li {
 
 #header {
     margin-top: 30px;
+    font-family: Avenir, Helvetica Neue, Helvetica, sans-serif;
 }
 
 #header .logo-subtitle {
-    color: #808080;
+    color: #A2A8A5;
     font-size: 14px;
     padding: 0 10px;
+    float: right;
+    margin: 20px 10px 0;
+    width: 220px;
 }
 
 

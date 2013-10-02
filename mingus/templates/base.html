@@ -58,9 +58,12 @@
     {% block body %}
 
   <div id="header" class="clearfix">
+    <span class="logo-subtitle">Samuel Clay is writing for you</span>
     <div id="logo">
-        <img src="{{ STATIC_URL }}img/favicon.ico" style="margin: 10px 8px 0 0;width: 24px;height: 24px;float: left">
-      <h1><a href="/" title="{{ BLOG_SETTINGS.site_name }}">{{ BLOG_SETTINGS.site_name }}</a> <span class="logo-subtitle">Samuel Clay's public record</h1>
+      <h1>
+          <img src="{{ STATIC_URL }}img/favicon.ico" style="margin-right: 8px;width: 24px;height: 24px">
+          <a href="/" title="{{ BLOG_SETTINGS.site_name }}" style="font-family: Avenir, Helvetica Neue, Helvetica, sans-serif">{{ BLOG_SETTINGS.site_name }}</a> 
+      </h1>
     </div>
     <!-- /logo -->
 
