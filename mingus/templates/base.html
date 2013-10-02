@@ -100,7 +100,7 @@
           <h4>{% trans "Elsewhere" %}</h4>
           <ul>
             {% for item in profiles %}
-            <li><a href="{{ item.url }}" rel="me" title="{{ item.name }}">{{ item.name }} {{ item.description }}</a></li>
+            <li><a href="{{ item.url }}" rel="me" title="{{ item.name|safe }}">{{ item.name|safe }} {{ item.description|safe }}</a></li>
             {% endfor %}
           </ul>
           {% endif %}
