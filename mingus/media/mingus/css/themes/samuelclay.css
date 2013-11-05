@@ -17,6 +17,14 @@ h2 {
     border-bottom: 1px solid #F0F0F0;
     padding-bottom: 6px;
 }
+h5 {
+    font-size: 0.8em;
+    margin-bottom: 12px;
+}
+h6 {
+    font-size: 0.75em;
+    margin-bottom: 12px;
+}
 ul, ol {
     margin: 1em 0;
 }
