@@ -13,10 +13,8 @@
         <div class="body">
             {{ object.description|safe }}
         </div>
-        {% if object.content_object.allow_comments %}
           {% get_comment_count for object.content_object as comment_count %}
           <div class="comment_count"><a href="{{ object.content_object.get_absolute_url }}#comments">{{ comment_count }} comment{{ comment_count|pluralize }}</a></div>
-        {% endif %}
 
     {% endwith %}
 </div>
